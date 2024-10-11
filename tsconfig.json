@@ -1,7 +1,15 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "ES6",
+    "module": "ESNext",
+    "outDir": "dist/extensions",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["chrome"]
+  },
+  "include": ["src/extensions/**/*.ts", "src/components/**/*.tsx"],
+  "exclude": ["node_modules"]
 }
