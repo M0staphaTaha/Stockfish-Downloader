@@ -1,9 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Stockfish Downloader Extension",
+  "name": "Stockfish Downloader",
   "version": "1.0",
   "description": "A browser extension for downloading videos from websites.",
-  "permissions": ["activeTab", "downloads", "storage", "scripting", "webRequest", "webNavigation"],
+  "permissions": ["activeTab", "downloads", "storage", "scripting", "webRequest", "webRequestBlocking", "webNavigation", "<all_urls>"],
+  
   "background": {
     "service_worker": "background.js"
   },
